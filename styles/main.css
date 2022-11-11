@@ -1,0 +1,63 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: spin 1s infinite;
+}
+
+#main {
+  gap: 3rem;
+}
+
+#logo {
+  width: 400px;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 400px;
+}
+
+#loginForm label {
+  display: block;
+  color: #fafafa;
+}
+
+#loginForm input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--background);
+  font-weight: 300;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  outline: 1px solid transparent;
+  transition: outline 500ms;
+}
+
+#loginForm input:focus {
+  border-color: var(--primary-400);
+  outline: solid 1px var(--primary-400);
+}
+
+#btnSubmit {
+  background-color: var(--primary-500);
+  font-size: 1rem;
+  height: 60px;
+  color: #fafafa;
+}
+
+#btnSubmit:hover {
+  background-color: var(--primary-300);
+}

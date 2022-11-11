@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/print.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <script src="../functions/config.js"></script>
+    <title>Logins</title>
+  </head>
+  <body>
+    <div id="print">
+     
+    </div>
+     
+    </div>
+    <script>
+        const print = document.getElementById("print")
+        USERS.map(user => {
+            var box = document.createElement("div")
+            box.classList.add("logins")
+
+            var login = document.createElement("p")
+            login.append("Usuário:")
+            var password = document.createElement("p")
+            password.append("Senha:")
+            
+            var usuario = document.createElement("span")
+            usuario.append(user.login)
+            usuario.style.marginLeft = "1rem"
+            usuario.style.fontSize = "1.2rem"
+            
+            var senha = document.createElement("span")
+            senha.append(user.password)
+            senha.style.marginLeft = "1rem"
+            senha.style.fontSize = "1.2rem"
+
+            login.appendChild(usuario)
+            password.appendChild(senha)
+
+            print.appendChild(box)
+            box.appendChild(login)
+            box.appendChild(password)
+
+
+
+        })
+    </script>
+  </body>
+</html>

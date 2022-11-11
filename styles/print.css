@@ -1,0 +1,28 @@
+#print {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:1rem;
+  font-size: 0.8rem;
+}
+
+.logins {
+  padding: 1rem;
+  border: 1px solid #111;
+  border-radius: 8px;
+
+  font-family: Roboto;
+  
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 1.5rem;
+}
